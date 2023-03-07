@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="src/styles/style.css">
+
+        <title>Alura - Expressões regulares</title>
+    </head>
+    <body class="container">
+        <h1 class="text-left">Expressões regulares</h1>
+    
+        <form class="form" >
+            
+            <fieldset class="form-group">
+                <label for="target">Target string (alvo)</label>
+                <input type="text" id="target" class="form-control" value="" autocomplete="off" required autofocus placeholder="Digite um target" />        
+            </fieldset>    
+            
+            <fieldset class="form-group">
+                <label for="pattern">Pattern (expressão regular)</label>
+                <input type="text" id="pattern" class="form-control" value="" autocomplete="off" required  placeholder="Digite um pattern"/>
+            </fieldset>
+
+            <fieldset class="form-group">                
+                <button class="btn btn-primary" onclick="start(event)">Executar Regex</button>
+            </fieldset>
+
+            <fieldset class="checkbox">
+                <label><input type="checkbox" id="showIndex" value="true" />Mostra índice </label>
+                <label></label>
+                <label><input type="checkbox" id="showGroups" value="true" />Mostra grupos </label>
+            </fieldset>
+
+            <fieldset class="form-group">
+                <label for="result" id="labelResults">Matches (resultados)</label>
+                <input type="text" id="result" class="form-control" value="" readonly />
+            </fieldset>
+
+            <fieldset class="form-group">
+                <label for="result" id="labelHighlight">Highlight</label>
+                <div id="highlightText" style="font-size:30px;"></div>
+            </fieldset>
+            
+        </form>
+
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <fieldset class="form-group">
+
+            <textarea class="form-control" rows="5" id="comment"></textarea>
+
+        </fieldset>
+        
+        <br />
+
+        <script src="src/js/regex.js"></script>
+    </body>
+</html>
